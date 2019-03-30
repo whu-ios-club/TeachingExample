@@ -158,9 +158,6 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" image="Action-Play-Small"/>
-                                                            <connections>
-                                                                <action selector="playButtonTapped:" destination="bf5-0l-6sQ" eventType="touchUpInside" id="Vel-7a-KAi"/>
-                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </view>
@@ -169,6 +166,11 @@
                                                     <constraint firstAttribute="width" constant="50" id="gX6-hf-mCr"/>
                                                 </constraints>
                                                 <blurEffect style="dark"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </visualEffectView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -289,9 +291,6 @@
                         <viewLayoutGuide key="safeArea" id="3et-3L-IjC"/>
                     </view>
                     <size key="freeformSize" width="375" height="2000"/>
-                    <connections>
-                        <outlet property="visualEffectView" destination="BP1-gQ-kLR" id="gjJ-QN-d1Z"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6U-Fd-r9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
