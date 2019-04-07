@@ -12,6 +12,12 @@
 		77587B00223D145A00E7C588 /* _.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77587AFE223D145A00E7C588 /* _.xcdatamodeld */; };
 		77587B02223D145D00E7C588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77587B01223D145D00E7C588 /* Assets.xcassets */; };
 		77587B05223D145D00E7C588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77587B03223D145D00E7C588 /* LaunchScreen.storyboard */; };
+		77F033B5224F1E50008ECF84 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F033B4224F1E50008ECF84 /* HomeViewController.swift */; };
+		77F033B922598A48008ECF84 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F033B822598A48008ECF84 /* Data.swift */; };
+		77F033BB22598ADD008ECF84 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F033BA22598ADD008ECF84 /* SectionViewController.swift */; };
+		77F033BD22598B03008ECF84 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F033BC22598B03008ECF84 /* SectionCollectionViewCell.swift */; };
+		77F033BF22599747008ECF84 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F033BE22599747008ECF84 /* TestimonialViewController.swift */; };
+		77F033C1225997A6008ECF84 /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F033C0225997A6008ECF84 /* TestimonialCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		77587B01223D145D00E7C588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77587B04223D145D00E7C588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77587B06223D145D00E7C588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F033B4224F1E50008ECF84 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		77F033B822598A48008ECF84 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		77F033BA22598ADD008ECF84 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
+		77F033BC22598B03008ECF84 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		77F033BE22599747008ECF84 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
+		77F033C0225997A6008ECF84 /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,12 @@
 			children = (
 				77587AF7223D145A00E7C588 /* AppDelegate.swift */,
 				77587AFB223D145A00E7C588 /* Main.storyboard */,
+				77F033B822598A48008ECF84 /* Data.swift */,
+				77F033B4224F1E50008ECF84 /* HomeViewController.swift */,
+				77F033BA22598ADD008ECF84 /* SectionViewController.swift */,
+				77F033BE22599747008ECF84 /* TestimonialViewController.swift */,
+				77F033C0225997A6008ECF84 /* TestimonialCollectionViewCell.swift */,
+				77F033BC22598B03008ECF84 /* SectionCollectionViewCell.swift */,
 				77587B01223D145D00E7C588 /* Assets.xcassets */,
 				77587B03223D145D00E7C588 /* LaunchScreen.storyboard */,
 				77587B06223D145D00E7C588 /* Info.plist */,
@@ -136,7 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				77587B00223D145A00E7C588 /* _.xcdatamodeld in Sources */,
+				77F033BB22598ADD008ECF84 /* SectionViewController.swift in Sources */,
 				77587AF8223D145A00E7C588 /* AppDelegate.swift in Sources */,
+				77F033B5224F1E50008ECF84 /* HomeViewController.swift in Sources */,
+				77F033BF22599747008ECF84 /* TestimonialViewController.swift in Sources */,
+				77F033BD22598B03008ECF84 /* SectionCollectionViewCell.swift in Sources */,
+				77F033C1225997A6008ECF84 /* TestimonialCollectionViewCell.swift in Sources */,
+				77F033B922598A48008ECF84 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
