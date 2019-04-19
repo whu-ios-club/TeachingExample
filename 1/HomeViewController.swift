@@ -34,6 +34,7 @@ class HomeViewController: UIViewController {
         scrollView.delegate = self
         chapterCollectionView.delegate = self
         chapterCollectionView.dataSource = self
+        self.navigationController?.setToolbarHidden(true, animated: false)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -65,6 +66,8 @@ extension HomeViewController: UIScrollViewDelegate {
             deviceImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/4)
             backgroundImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/5)
         }
+        let navigationIsHidden = offsetY <= 0
+        navigationController?.setToolbarHidden(navigationIsHidden, animated: true)
     }
 }
 
