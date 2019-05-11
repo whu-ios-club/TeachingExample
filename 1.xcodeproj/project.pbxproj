@@ -17,6 +17,7 @@
 		7773D158226A13F0001ACA1A /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773D157226A13F0001ACA1A /* ChaptersViewController.swift */; };
 		7773D15A226AC816001ACA1A /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773D159226AC816001ACA1A /* BookmarksTableViewController.swift */; };
 		7773D15C226AD7BA001ACA1A /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773D15B226AD7BA001ACA1A /* BookmarkTableViewCell.swift */; };
+		77B687BD2286BBD800748F95 /* HomeToSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B687BC2286BBD800748F95 /* HomeToSectionViewController.swift */; };
 		77F033B5224F1E50008ECF84 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F033B4224F1E50008ECF84 /* HomeViewController.swift */; };
 		77F033B922598A48008ECF84 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F033B822598A48008ECF84 /* Data.swift */; };
 		77F033BB22598ADD008ECF84 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F033BA22598ADD008ECF84 /* SectionViewController.swift */; };
@@ -38,6 +39,7 @@
 		7773D157226A13F0001ACA1A /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
 		7773D159226AC816001ACA1A /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
 		7773D15B226AD7BA001ACA1A /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
+		77B687BC2286BBD800748F95 /* HomeToSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeToSectionViewController.swift; sourceTree = "<group>"; };
 		77F033B4224F1E50008ECF84 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		77F033B822598A48008ECF84 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		77F033BA22598ADD008ECF84 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				77587AF7223D145A00E7C588 /* AppDelegate.swift */,
 				77587AFB223D145A00E7C588 /* Main.storyboard */,
 				77F033B822598A48008ECF84 /* Data.swift */,
+				77B687BC2286BBD800748F95 /* HomeToSectionViewController.swift */,
 				77F033B4224F1E50008ECF84 /* HomeViewController.swift */,
 				7773D157226A13F0001ACA1A /* ChaptersViewController.swift */,
 				7773D159226AC816001ACA1A /* BookmarksTableViewController.swift */,
@@ -176,6 +179,7 @@
 				7773D15C226AD7BA001ACA1A /* BookmarkTableViewCell.swift in Sources */,
 				77F033B5224F1E50008ECF84 /* HomeViewController.swift in Sources */,
 				77F033BF22599747008ECF84 /* TestimonialViewController.swift in Sources */,
+				77B687BD2286BBD800748F95 /* HomeToSectionViewController.swift in Sources */,
 				776F3BAE226B24A60006E219 /* WebViewController.swift in Sources */,
 				77F033BD22598B03008ECF84 /* SectionCollectionViewCell.swift in Sources */,
 				77F033C1225997A6008ECF84 /* TestimonialCollectionViewCell.swift in Sources */,

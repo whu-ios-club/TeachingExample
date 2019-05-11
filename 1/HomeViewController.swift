@@ -20,6 +20,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var chapterCollectionView: UICollectionView!
     
+    let transition = HomeToSectionViewController()
+    var originFrame = CGRect.zero
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.alpha = 0
@@ -45,6 +48,18 @@ class HomeViewController: UIViewController {
             toViewController.section = section
             toViewController.sections = sections
             toViewController.indexPath = indexPath
+            toViewController.transitioningDelegate = self
+            
+            //确定每个可见的单元格的坐标
+            for cell in chapterCollectionView.visibleCells as! [SectionCollectionViewCell] {
+                //确定是第几格
+                let indexPath = chapterCollectionView.indexPath(for: cell)!
+                //获得单元格属性
+                let attributes = chapterCollectionView.layoutAttributesForItem(at: indexPath)!
+                //从属性中获得坐标，大小的frame
+                self.originFrame = chapterCollectionView.convert(attributes.frame, to: view)
+                print(self.originFrame)
+            }
         }
     }
     
@@ -57,7 +72,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print(scrollView)
+        //print(scrollView)
         let offsetY = scrollView.contentOffset.y
         if offsetY < 0 {
             heroView.transform = CGAffineTransform(translationX: 0, y: offsetY)
@@ -91,4 +106,17 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     
+}
+
+extension HomeViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.presenting = true
+        transition.originFrame = originFrame
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.presenting = false
+        return transition
+    }
 }
